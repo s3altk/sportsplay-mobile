@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/background_light">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:text="Загрузка..."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_weight="80"
+                android:gravity="left|bottom"
+                android:id="@+id/txtAddress5"
+                android:paddingLeft="20dp" />
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/pbLoad5"
+                android:layout_weight="20"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <TextView
+                android:text="Ближайшая встреча"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtCurMeet5"
+                android:gravity="left|center"
+                android:layout_weight="60"
+                android:paddingLeft="20dp" />
+            <Button
+                android:text="Добавить"
+                android:id="@+id/btnAdd5"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="@color/material_deep_teal_500"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="40" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbtLayout5"
+        android:background="@android:color/background_light">
+        <TextView
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtName5" />
+        <TextView
+            android:text="Date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/txtDate5" />
+        <Button
+            android:text="Подробнее"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMore5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="14sp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtMeets5"
+            android:text="Остальные встречи"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            android:background="@android:color/background_light">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvMeets5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:background="@color/material_grey_300" />
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

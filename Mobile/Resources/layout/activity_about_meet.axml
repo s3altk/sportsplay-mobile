@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="100">
+    <ImageButton
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        android:id="@+id/btnBack4"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbLoad4"
+        android:padding="15dp" />
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        android:id="@+id/tbLayout4">
+        <TextView
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtName4" />
+        <TextView
+            android:text="Address"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:id="@+id/txtAddress4"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:text="Date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDate4"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:gravity="fill_vertical"
+                android:id="@+id/txtPartakers4"
+                android:text="Список встреч"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="90"
+                android:textStyle="bold"
+                android:paddingLeft="25dp" />
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnChoice4"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="@color/material_deep_teal_500"
+                android:layout_weight="10"
+                android:layout_marginRight="20dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPartakers4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/material_grey_100" />
+            </TableLayout>
+        </ScrollView>
+    </TableLayout>
+</LinearLayout>

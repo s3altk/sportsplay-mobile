@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack3"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbLoad3"
+        android:padding="15dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:id="@+id/tbLayout3">
+            <TextView
+                android:text="Настройки"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+            <TextView
+                android:text="Текущий пользователь"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:text="User"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCurUser3"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic" />
+            <TextView
+                android:text="Сменить пароль"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/txtPassword3" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editPassword3"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:hint="Пароль"
+                android:textSize="15sp" />
+            <Button
+                android:text="Сохранить"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSave3"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1"
+                android:gravity="bottom|center"
+                android:layout_marginTop="50dp">
+                <Button
+                    android:text="Сменить пользователя"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnLogout3"
+                    android:textSize="12sp"
+                    style="?android:attr/borderlessButtonStyle" />
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
